@@ -13,7 +13,7 @@
 #import "SVGKLayeredImageView.h"
 
 
-@interface DougViewController ()
+@interface DougViewController () <UIScrollViewDelegate>
 
 @property (nonatomic, strong) SVGKLayeredImageView *svgImageView;
 @property (nonatomic, strong) UIScrollView *scrollView;
@@ -22,9 +22,14 @@
 
 @implementation DougViewController
 
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return self.svgImageView;
+}
+
 - (void)tapMethod:(UITapGestureRecognizer *)sender
 {
-    CGPoint p = [sender locationInView:self.svgImageView];
+    CGPoint p = [sender locationInView:self.scrollView];
     NSLog(@"tap happen @x:%f y:%f", p.x, p.y);
     CALayer* layerForHitTesting;
     layerForHitTesting = self.svgImageView.layer;
@@ -45,13 +50,16 @@
     self.svgImageView = [[SVGKLayeredImageView alloc] initWithSVGKImage: [SVGKImage imageNamed:@"MonkeySketch.svg"]];
     self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
     self.scrollView.contentSize = self.svgImageView.frame.size;
+    self.scrollView.delegate = self;
+    self.scrollView.minimumZoomScale = 1.0;
+    self.scrollView.maximumZoomScale = 10.0;
     [self.scrollView addSubview:self.svgImageView];    
     //[self.view addSubview: svgView];
     [self.view addSubview: self.scrollView];
     
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapMethod:)];
     [self.view addGestureRecognizer:tapGesture];
-    
+
     /*
     int i = 0;
     CALayer* layer = svgImageView.layer;
