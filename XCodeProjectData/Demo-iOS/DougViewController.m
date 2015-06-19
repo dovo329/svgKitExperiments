@@ -47,7 +47,7 @@
 
     //SVGKFastImageView *svgView = [[SVGKFastImageView alloc] initWithSVGKImage: [SVGKImage imageNamed:@"Monkey.svg"]];
     self.view.backgroundColor = [UIColor orangeColor];
-    self.svgImageView = [[SVGKLayeredImageView alloc] initWithSVGKImage: [SVGKImage imageNamed:@"MonkeySketch.svg"]];
+    self.svgImageView = [[SVGKLayeredImageView alloc] initWithSVGKImage: [SVGKImage imageNamed:@"CatOutline.svg"]];
     self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
     self.scrollView.contentSize = self.svgImageView.frame.size;
     self.scrollView.delegate = self;
