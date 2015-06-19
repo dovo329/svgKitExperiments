@@ -70,6 +70,7 @@
 		A508443D1B3389110076B913 /* DougViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A508443C1B3389110076B913 /* DougViewController.m */; };
 		A508443F1B338F4A0076B913 /* Cat.svg in Resources */ = {isa = PBXBuildFile; fileRef = A508443E1B338F4A0076B913 /* Cat.svg */; };
 		A50844411B338F4F0076B913 /* CatA.svg in Resources */ = {isa = PBXBuildFile; fileRef = A50844401B338F4F0076B913 /* CatA.svg */; };
+		A5789B841B33D06B00EF28A6 /* House.svg in Resources */ = {isa = PBXBuildFile; fileRef = A5789B831B33D06B00EF28A6 /* House.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +162,7 @@
 		A508443C1B3389110076B913 /* DougViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DougViewController.m; sourceTree = "<group>"; };
 		A508443E1B338F4A0076B913 /* Cat.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Cat.svg; path = ../../../../EduFun/Art/Cat.svg; sourceTree = "<group>"; };
 		A50844401B338F4F0076B913 /* CatA.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = CatA.svg; path = ../../../../EduFun/Art/CatA.svg; sourceTree = "<group>"; };
+		A5789B831B33D06B00EF28A6 /* House.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = House.svg; path = ../../../../../Documents/House.svg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				A5039E0A1B33BBE1009B628C /* MonkeySketch.svg */,
+				A5789B831B33D06B00EF28A6 /* House.svg */,
 				A5039E0E1B33C78F009B628C /* CatOutline.svg */,
 				A5039E0B1B33BBE1009B628C /* MonkeyAf.svg */,
 				A50844401B338F4F0076B913 /* CatA.svg */,
@@ -438,6 +441,7 @@
 				663FD00416CAB16B00CCBFB3 /* groups-and-layers-test.svg in Resources */,
 				A508443F1B338F4A0076B913 /* Cat.svg in Resources */,
 				661ADBFA16CC3399006F4BC3 /* rotated-and-skewed-text.svg in Resources */,
+				A5789B841B33D06B00EF28A6 /* House.svg in Resources */,
 				665E07F316CE81DD00D6934D /* g-element-applies-rotation.svg in Resources */,
 				66A09CA616CFE67B003CD5CD /* lingrad01.svg in Resources */,
 				66A09CA716CFE67B003CD5CD /* opacity01.svg in Resources */,
