@@ -15,9 +15,26 @@
 
 @interface DougViewController ()
 
+@property (nonatomic, strong) SVGKLayeredImageView *svgImageView;
+@property (nonatomic, strong) UIScrollView *scrollView;
+
 @end
 
 @implementation DougViewController
+
+- (void)tapMethod:(UITapGestureRecognizer *)sender
+{
+    CGPoint p = [sender locationInView:self.svgImageView];
+    NSLog(@"tap happen @x:%f y:%f", p.x, p.y);
+    CALayer* layerForHitTesting;
+    layerForHitTesting = self.svgImageView.layer;
+    CALayer* hitLayer = [layerForHitTesting hitTest:p];
+    
+    if( [hitLayer isKindOfClass:[CAShapeLayer class]]){
+        CAShapeLayer* shapeLayer = (CAShapeLayer*)hitLayer;
+        shapeLayer.fillColor = [UIColor redColor].CGColor;
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,13 +42,17 @@
 
     //SVGKFastImageView *svgView = [[SVGKFastImageView alloc] initWithSVGKImage: [SVGKImage imageNamed:@"Monkey.svg"]];
     self.view.backgroundColor = [UIColor orangeColor];
-    SVGKLayeredImageView *svgImageView = [[SVGKLayeredImageView alloc] initWithSVGKImage: [SVGKImage imageNamed:@"MonkeySketch.svg"]];
-    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
-    scrollView.contentSize = svgImageView.frame.size;
-    [scrollView addSubview:svgImageView];
+    self.svgImageView = [[SVGKLayeredImageView alloc] initWithSVGKImage: [SVGKImage imageNamed:@"MonkeySketch.svg"]];
+    self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
+    self.scrollView.contentSize = self.svgImageView.frame.size;
+    [self.scrollView addSubview:self.svgImageView];    
     //[self.view addSubview: svgView];
-    [self.view addSubview: scrollView];
+    [self.view addSubview: self.scrollView];
     
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapMethod:)];
+    [self.view addGestureRecognizer:tapGesture];
+    
+    /*
     int i = 0;
     CALayer* layer = svgImageView.layer;
     for (CALayer *subLayer in layer.sublayers) {
@@ -136,7 +157,7 @@
             }
         }
         
-    }
+    }*/
     
     /*SVGKImage *svgImage = [SVGKImage imageNamed:@"Anchor.svg"];
      SVGKLayeredImageView *svgImageView = [[SVGKLayeredImageView alloc] initWithSVGKImage:svgImage];
