@@ -200,8 +200,13 @@ CATextLayer *textLayerForLastTappedLayer;
 		{
 			lastTappedLayerOriginalBorderColor = lastTappedLayer.borderColor;
 			lastTappedLayerOriginalBorderWidth = lastTappedLayer.borderWidth;
+            
+            if( [lastTappedLayer isKindOfClass:[CAShapeLayer class]]){
+                CAShapeLayer* shapeLayer = (CAShapeLayer*)lastTappedLayer;
+                shapeLayer.fillColor = [UIColor redColor].CGColor;
+            }
 			
-			lastTappedLayer.borderColor = [UIColor greenColor].CGColor;
+			lastTappedLayer.borderColor = [UIColor purpleColor].CGColor;
 			lastTappedLayer.borderWidth = 3.0;
 			
 #if SHOW_DEBUG_INFO_ON_EACH_TAPPED_LAYER

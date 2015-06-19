@@ -12,6 +12,8 @@
 
 #import "DetailViewController.h"
 
+#import "DougViewController.h"
+
 @implementation AppDelegate
 @synthesize window = _window;
 @synthesize navigationController = _navigationController;
@@ -34,7 +36,9 @@
     // Override point for customization after application launch.
 	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
 	    MasterViewController *masterViewController = [[[MasterViewController alloc] initWithNibName:@"MasterViewController_iPhone" bundle:nil] autorelease];
-	    self.navigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];
+        /*DougViewController *vc = [DougViewController new];
+	    self.navigationController = [[[UINavigationController alloc] initWithRootViewController:vc] autorelease];*/
+        self.navigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];
 	    self.window.rootViewController = self.navigationController;
 	} else {
 	    MasterViewController *masterViewController = [[[MasterViewController alloc] initWithNibName:@"MasterViewController_iPad" bundle:nil] autorelease];
