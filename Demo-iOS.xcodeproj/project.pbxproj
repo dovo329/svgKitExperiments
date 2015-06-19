@@ -64,6 +64,8 @@
 		66E862A11688BA510059C9C4 /* uk-only.svg in Resources */ = {isa = PBXBuildFile; fileRef = 66E8628C1688BA510059C9C4 /* uk-only.svg */; };
 		66E862A21688BA510059C9C4 /* voies.svg in Resources */ = {isa = PBXBuildFile; fileRef = 66E8628D1688BA510059C9C4 /* voies.svg */; };
 		9ED79A21179D83580048AA5B /* radialGradientTest.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9ED79A20179D83580048AA5B /* radialGradientTest.svg */; };
+		A5039E0C1B33BBE1009B628C /* MonkeySketch.svg in Resources */ = {isa = PBXBuildFile; fileRef = A5039E0A1B33BBE1009B628C /* MonkeySketch.svg */; };
+		A5039E0D1B33BBE1009B628C /* MonkeyAf.svg in Resources */ = {isa = PBXBuildFile; fileRef = A5039E0B1B33BBE1009B628C /* MonkeyAf.svg */; };
 		A508443D1B3389110076B913 /* DougViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A508443C1B3389110076B913 /* DougViewController.m */; };
 		A508443F1B338F4A0076B913 /* Cat.svg in Resources */ = {isa = PBXBuildFile; fileRef = A508443E1B338F4A0076B913 /* Cat.svg */; };
 		A50844411B338F4F0076B913 /* CatA.svg in Resources */ = {isa = PBXBuildFile; fileRef = A50844401B338F4F0076B913 /* CatA.svg */; };
@@ -151,6 +153,8 @@
 		66E8628C1688BA510059C9C4 /* uk-only.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "uk-only.svg"; sourceTree = "<group>"; };
 		66E8628D1688BA510059C9C4 /* voies.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = voies.svg; sourceTree = "<group>"; };
 		9ED79A20179D83580048AA5B /* radialGradientTest.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = radialGradientTest.svg; sourceTree = "<group>"; };
+		A5039E0A1B33BBE1009B628C /* MonkeySketch.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = MonkeySketch.svg; path = ../../../../../Documents/MonkeySketch.svg; sourceTree = "<group>"; };
+		A5039E0B1B33BBE1009B628C /* MonkeyAf.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = MonkeyAf.svg; path = ../../../../../Documents/MonkeyAf.svg; sourceTree = "<group>"; };
 		A508443B1B3389110076B913 /* DougViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DougViewController.h; sourceTree = "<group>"; };
 		A508443C1B3389110076B913 /* DougViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DougViewController.m; sourceTree = "<group>"; };
 		A508443E1B338F4A0076B913 /* Cat.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Cat.svg; path = ../../../../EduFun/Art/Cat.svg; sourceTree = "<group>"; };
@@ -230,6 +234,8 @@
 		66A09C9F16CFE67B003CD5CD /* svg spec examples */ = {
 			isa = PBXGroup;
 			children = (
+				A5039E0A1B33BBE1009B628C /* MonkeySketch.svg */,
+				A5039E0B1B33BBE1009B628C /* MonkeyAf.svg */,
 				A50844401B338F4F0076B913 /* CatA.svg */,
 				A508443E1B338F4A0076B913 /* Cat.svg */,
 				66A09CA016CFE67B003CD5CD /* lingrad01.svg */,
@@ -414,10 +420,12 @@
 				66E8629D1688BA510059C9C4 /* Reinel_compass_rose-simplified-for-testing.svg in Resources */,
 				66E8629E1688BA510059C9C4 /* Reinel_compass_rose.svg in Resources */,
 				66E8629F1688BA510059C9C4 /* test-wave-1.svg in Resources */,
+				A5039E0D1B33BBE1009B628C /* MonkeyAf.svg in Resources */,
 				66E862A01688BA510059C9C4 /* Text.svg in Resources */,
 				66E862A11688BA510059C9C4 /* uk-only.svg in Resources */,
 				66E862A21688BA510059C9C4 /* voies.svg in Resources */,
 				66A9F4441688C66E000D4A2E /* RainbowWing.svg in Resources */,
+				A5039E0C1B33BBE1009B628C /* MonkeySketch.svg in Resources */,
 				663FCFF116C9AF1C00CCBFB3 /* gradients.svg in Resources */,
 				663FCFF216C9AF1C00CCBFB3 /* shapes.svg in Resources */,
 				663FCFF316C9AF1C00CCBFB3 /* strokes.svg in Resources */,

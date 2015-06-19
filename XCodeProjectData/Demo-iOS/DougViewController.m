@@ -25,7 +25,7 @@
 
     //SVGKFastImageView *svgView = [[SVGKFastImageView alloc] initWithSVGKImage: [SVGKImage imageNamed:@"Monkey.svg"]];
     self.view.backgroundColor = [UIColor orangeColor];
-    SVGKLayeredImageView *svgImageView = [[SVGKLayeredImageView alloc] initWithSVGKImage: [SVGKImage imageNamed:@"Cat.svg"]];
+    SVGKLayeredImageView *svgImageView = [[SVGKLayeredImageView alloc] initWithSVGKImage: [SVGKImage imageNamed:@"MonkeySketch.svg"]];
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
     scrollView.contentSize = svgImageView.frame.size;
     [scrollView addSubview:svgImageView];
@@ -64,28 +64,9 @@
                 }
                 for (CALayer *sub4Layer in sub3Layer.sublayers) {
                     NSLog(@"4: %@", [sub4Layer class]);
-                    CAShapeLayer* shapeLayer = (CAShapeLayer*)sub4Layer;
-                    if (i==0) {
-                        shapeLayer.fillColor = [UIColor redColor].CGColor;
-                    } else if (i==1) {
-                        shapeLayer.fillColor = [UIColor orangeColor].CGColor;
-                    } else if (i==2) {
-                        shapeLayer.fillColor = [UIColor yellowColor].CGColor;
-                    } else if (i==3) {
-                        shapeLayer.fillColor = [UIColor greenColor].CGColor;
-                    } else if (i==4) {
-                        shapeLayer.fillColor = [UIColor blueColor].CGColor;
-                    } else if (i==5) {
-                        shapeLayer.fillColor = [UIColor purpleColor].CGColor;
-                    }
-                    i++;
-                    if (i > 5) {
-                        i = 0;
-                    }
-                    
-                    for (CALayer *sub5Layer in sub4Layer.sublayers) {
-                        NSLog(@"5: %@", [sub5Layer class]);
-                        CAShapeLayer* shapeLayer = (CAShapeLayer*)sub5Layer;
+                    if( [sub4Layer isKindOfClass:[CAShapeLayer class]])
+                    {
+                        CAShapeLayer* shapeLayer = (CAShapeLayer*)sub4Layer;
                         if (i==0) {
                             shapeLayer.fillColor = [UIColor redColor].CGColor;
                         } else if (i==1) {
@@ -101,7 +82,54 @@
                         }
                         i++;
                         if (i > 5) {
-                        i = 0;
+                            i = 0;
+                        }
+                    }
+                    
+                    for (CALayer *sub5Layer in sub4Layer.sublayers) {
+                        NSLog(@"5: %@", [sub5Layer class]);
+                        if( [sub5Layer isKindOfClass:[CAShapeLayer class]]) {
+                            CAShapeLayer* shapeLayer = (CAShapeLayer*)sub5Layer;
+                            if (i==0) {
+                                shapeLayer.fillColor = [UIColor redColor].CGColor;
+                            } else if (i==1) {
+                                shapeLayer.fillColor = [UIColor orangeColor].CGColor;
+                            } else if (i==2) {
+                                shapeLayer.fillColor = [UIColor yellowColor].CGColor;
+                            } else if (i==3) {
+                                shapeLayer.fillColor = [UIColor greenColor].CGColor;
+                            } else if (i==4) {
+                                shapeLayer.fillColor = [UIColor blueColor].CGColor;
+                            } else if (i==5) {
+                                shapeLayer.fillColor = [UIColor purpleColor].CGColor;
+                            }
+                            i++;
+                            if (i > 5) {
+                            i = 0;
+                            }
+                        }
+                        for (CALayer *sub6Layer in sub5Layer.sublayers) {
+                            NSLog(@"6: %@", [sub6Layer class]);
+                            if( [sub6Layer isKindOfClass:[CAShapeLayer class]]) {
+                                CAShapeLayer* shapeLayer = (CAShapeLayer*)sub6Layer;
+                                if (i==0) {
+                                    shapeLayer.fillColor = [UIColor redColor].CGColor;
+                                } else if (i==1) {
+                                    shapeLayer.fillColor = [UIColor orangeColor].CGColor;
+                                } else if (i==2) {
+                                    shapeLayer.fillColor = [UIColor yellowColor].CGColor;
+                                } else if (i==3) {
+                                    shapeLayer.fillColor = [UIColor greenColor].CGColor;
+                                } else if (i==4) {
+                                    shapeLayer.fillColor = [UIColor blueColor].CGColor;
+                                } else if (i==5) {
+                                    shapeLayer.fillColor = [UIColor purpleColor].CGColor;
+                                }
+                                i++;
+                                if (i > 5) {
+                                i = 0;
+                                }
+                            }
                         }
                     }
                 }
