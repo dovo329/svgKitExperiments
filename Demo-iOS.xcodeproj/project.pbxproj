@@ -67,10 +67,11 @@
 		A5039E0C1B33BBE1009B628C /* MonkeySketch.svg in Resources */ = {isa = PBXBuildFile; fileRef = A5039E0A1B33BBE1009B628C /* MonkeySketch.svg */; };
 		A5039E0D1B33BBE1009B628C /* MonkeyAf.svg in Resources */ = {isa = PBXBuildFile; fileRef = A5039E0B1B33BBE1009B628C /* MonkeyAf.svg */; };
 		A5039E0F1B33C78F009B628C /* CatOutline.svg in Resources */ = {isa = PBXBuildFile; fileRef = A5039E0E1B33C78F009B628C /* CatOutline.svg */; };
-		A508443D1B3389110076B913 /* DougViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A508443C1B3389110076B913 /* DougViewController.m */; };
+		A508443D1B3389110076B913 /* DougViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A508443C1B3389110076B913 /* DougViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		A508443F1B338F4A0076B913 /* Cat.svg in Resources */ = {isa = PBXBuildFile; fileRef = A508443E1B338F4A0076B913 /* Cat.svg */; };
 		A50844411B338F4F0076B913 /* CatA.svg in Resources */ = {isa = PBXBuildFile; fileRef = A50844401B338F4F0076B913 /* CatA.svg */; };
 		A5789B841B33D06B00EF28A6 /* House.svg in Resources */ = {isa = PBXBuildFile; fileRef = A5789B831B33D06B00EF28A6 /* House.svg */; };
+		A5A438B51B346A99009D9524 /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A438B41B346A99009D9524 /* PaletteViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +164,8 @@
 		A508443E1B338F4A0076B913 /* Cat.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Cat.svg; path = ../../../../EduFun/Art/Cat.svg; sourceTree = "<group>"; };
 		A50844401B338F4F0076B913 /* CatA.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = CatA.svg; path = ../../../../EduFun/Art/CatA.svg; sourceTree = "<group>"; };
 		A5789B831B33D06B00EF28A6 /* House.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = House.svg; path = ../../../../../Documents/House.svg; sourceTree = "<group>"; };
+		A5A438B31B346A99009D9524 /* PaletteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaletteViewController.h; sourceTree = "<group>"; };
+		A5A438B41B346A99009D9524 /* PaletteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaletteViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +264,8 @@
 				66E862581688BA0B0059C9C4 /* AppDelegate.m */,
 				A508443B1B3389110076B913 /* DougViewController.h */,
 				A508443C1B3389110076B913 /* DougViewController.m */,
+				A5A438B31B346A99009D9524 /* PaletteViewController.h */,
+				A5A438B41B346A99009D9524 /* PaletteViewController.m */,
 				66E862591688BA0B0059C9C4 /* Default-568h@2x.png */,
 				66E8625A1688BA0B0059C9C4 /* Demo-iOS-Info.plist */,
 				66E8625B1688BA0B0059C9C4 /* Demo-iOS-Prefix.pch */,
@@ -464,6 +469,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5A438B51B346A99009D9524 /* PaletteViewController.m in Sources */,
 				A508443D1B3389110076B913 /* DougViewController.m in Sources */,
 				66E8626B1688BA0B0059C9C4 /* AppDelegate.m in Sources */,
 				66E8626E1688BA0B0059C9C4 /* DetailViewController.m in Sources */,
